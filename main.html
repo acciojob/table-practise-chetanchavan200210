@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Student Table</title>
+    <style>
+        table {
+            background: yellow;
+            border: 1px solid black;  /* ✅ changed to 1px */
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 5px 5px 10px gray; /* shadow */
+        }
+        th, td {
+            border: 1px solid black;  /* ✅ keep same as table border */
+            padding: 8px 15px;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- Centered Bold Heading -->
-    <h2 style="text-align: center;">Student Details</h2>
-
     <!-- Table -->
-    <table style="background: yellow; border: 2px solid black; border-collapse: collapse; margin: auto;">
+    <table>
+        <caption>Student Details</caption>
         <tr>
-            <th style="font-weight: bold; border: 2px solid black;">NAME</th>
-            <th style="font-weight: bold; border: 2px solid black;">AGE</th>
-            <th style="font-weight: bold; border: 2px solid black;">BRANCH</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>BRANCH</th>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Shaw</td>
-            <td style="border: 2px solid black;">20</td>
-            <td style="border: 2px solid black;">CSE</td>
+            <td>Shaw</td>
+            <td>20</td>
+            <td>CSE</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Adil</td>
-            <td style="border: 2px solid black;">21</td>
-            <td style="border: 2px solid black;">ECE</td>
+            <td>Adil</td>
+            <td>21</td>
+            <td>ECE</td>
         </tr>
     </table>
 
 </body>
-
 </html>
